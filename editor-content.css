@@ -108,6 +108,42 @@ h3 + p {
   margin-top: 0.5em;
 }
 
+/* Estilo de assinatura */
+
+h6 {
+  font-size: 100%;
+  font-weight: 400;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Estilo talking point */
+
+.tp,
+.infotp {
+  margin-left: 2em;
+  text-indent: 0 !important;
+  position: relative;
+}
+
+.tp::before {
+  position: absolute;
+  left: -2em !important;
+  content: ">>" !important;
+}
+
+.infotp {
+  font-style: italic;
+}
+
+.infotp::before {
+  content: "" !important;
+}
+
+.infotp > em {
+  font-style: normal;
+} 
+
 /* Estilos de tabela */
 
 table {
