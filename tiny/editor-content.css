@@ -119,28 +119,28 @@ h6 {
 
 /* Estilo talking point */
 
-.tp,
-.infotp {
+p.tp,
+p.infotp {
   margin-left: 2em;
   text-indent: 0 !important;
   position: relative;
 }
 
-.tp::before {
+p.tp::before {
   position: absolute;
   left: -2em !important;
   content: ">>" !important;
 }
 
-.infotp {
+p.infotp {
   font-style: italic;
 }
 
-.infotp::before {
+p.infotp::before {
   content: "" !important;
 }
 
-.infotp > em {
+p.infotp > em {
   font-style: normal;
 } 
 
