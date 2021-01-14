@@ -1,7 +1,7 @@
 /* Estilos gerais */
 
 :root {
-  --sans-font: 'Barlow', 'Roboto', 'Inter', 'Source Sans Pro', 'Segoe UI', sans-serif;
+  --sans-font: 'Roboto', 'Segoe UI', 'Arial', sans-serif;
   --font-size: 18px;
 }  
 
@@ -43,20 +43,20 @@ ol[style*="list-style-type: lower-roman"] li {
 }
 
 ol > li::before {
-    counter-increment: list;
-    position: absolute;
-    left: -1.4em;
+  counter-increment: list;
+  position: absolute;
+  left: -1.4em;
 }
 
 ol > li::before {
-    content: counter(list, var(--list-style)) ") ";
+  content: counter(list, var(--list-style)) ") ";
 }
 
 
 /* Estilo de parágrafo numerado */
 
 body {
-    counter-reset: paragraph 1;
+  counter-reset: paragraph 1;
 }
 
 p.num {
@@ -65,10 +65,10 @@ p.num {
 }
 
 p:not(:first-child).num:before {
-    position: relative;
-    left: calc(var(--indent) * -1em);
-    content: counter(paragraph) ". ";
-    counter-increment: paragraph;
+  position: relative;
+  left: calc(var(--indent) * -1em);
+  content: counter(paragraph) ". ";
+  counter-increment: paragraph;
 }
 
 p:first-child {
@@ -89,6 +89,7 @@ h1, h2, h3 {
 h1 {
   font-size: 100%;
   font-weight: 600;
+  text-transform: uppercase;  
 }
 
 h2 {
